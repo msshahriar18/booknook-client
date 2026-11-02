@@ -32,7 +32,7 @@ const BookDetailsPage = async ({
   const book: IBook = await res.json();
 
   return (
-    <main className="mx-auto max-w-6xl px-6 py-8">
+    <main className="w-full mx-auto max-w-6xl px-6 py-8">
       <Link
         href="/books"
         className="flex w-fit items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"

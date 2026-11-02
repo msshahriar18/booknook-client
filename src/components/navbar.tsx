@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BookMarked, Menu } from "lucide-react";
@@ -31,6 +32,7 @@ const privateLinks = [
 export function Navbar() {
   const { data: session } = authClient.useSession();
   const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const user = session?.user;
   const links = user ? [...publicLinks, ...privateLinks] : publicLinks;
@@ -112,11 +114,38 @@ export function Navbar() {
             </>
           )}
 
-          <Button variant="outline" size="icon" className="md:hidden" aria-label="Open menu">
+          <Button
+            variant="outline"
+            size="icon"
+            className="md:hidden"
+            aria-label="Open menu"
+            onClick={() => setMenuOpen((current) => !current)}
+          >
             <Menu className="size-4" />
           </Button>
         </div>
       </nav>
+
+      {menuOpen && (
+        <ul className="grid gap-1 border-t border-border px-6 py-3 md:hidden">
+          {links.map((link) => (
+            <li key={link.href}>
+              <Link
+                href={link.href}
+                onClick={() => setMenuOpen(false)}
+                className={cn(
+                  "block py-2 text-sm",
+                  pathname === link.href
+                    ? "font-medium text-primary"
+                    : "text-foreground",
+                )}
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
     </header>
   );
 }
