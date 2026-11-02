@@ -10,9 +10,7 @@ export async function proxy(request: NextRequest) {
 
   const user = session?.user
   if (!user) {
-    const login = new URL('/login', request.url)
-    login.searchParams.set('from', request.nextUrl.pathname)
-    return NextResponse.redirect(login)
+    return NextResponse.redirect(new URL('/login', request.url))
   }
 }
 

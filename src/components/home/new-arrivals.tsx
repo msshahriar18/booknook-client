@@ -30,17 +30,11 @@ export async function NewArrivals() {
         </Link>
       </div>
 
-      {books.length === 0 ? (
-        <p className="mt-10 rounded-xl border border-dashed border-border p-10 text-center text-muted-foreground">
-          No books on the shelf yet. Add the first one.
-        </p>
-      ) : (
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {books.map((book) => (
-            <BookCard key={book._id} book={book} />
-          ))}
-        </div>
-      )}
+      <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {books.map((book) => (
+          <BookCard key={book._id} book={book} />
+        ))}
+      </div>
 
       <div className="mt-12 flex justify-center">
         <Button render={<Link href="/books">See All Books</Link>} />
