@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -49,11 +49,15 @@ export function Banner() {
                   {slide.text}
                 </p>
                 <div className="mt-8 flex flex-wrap gap-3">
-                  <Button render={<Link href="/books">Browse Books</Link>} />
-                  <Button
-                    variant="outline"
-                    render={<Link href="#how-it-works">How borrowing works</Link>}
-                  />
+                  <Link href="/books" className={buttonVariants({ size: "lg" })}>
+                    Browse Books
+                  </Link>
+                  <Link
+                    href="#how-it-works"
+                    className={buttonVariants({ variant: "outline", size: "lg" })}
+                  >
+                    How borrowing works
+                  </Link>
                 </div>
               </div>
 

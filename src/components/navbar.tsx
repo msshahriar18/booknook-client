@@ -14,7 +14,7 @@ import {
   PopoverTitle,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const publicLinks = [
@@ -100,8 +100,15 @@ export function Navbar() {
             </Popover>
           ) : (
             <>
-              <Button variant="outline" size="sm" render={<Link href="/login">Login</Link>} />
-              <Button size="sm" render={<Link href="/register">Register</Link>} />
+              <Link
+                href="/login"
+                className={buttonVariants({ variant: "outline", size: "sm" })}
+              >
+                Login
+              </Link>
+              <Link href="/register" className={buttonVariants({ size: "sm" })}>
+                Register
+              </Link>
             </>
           )}
 

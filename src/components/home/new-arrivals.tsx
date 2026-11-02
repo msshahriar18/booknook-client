@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { BookCard } from "@/components/book/book-card";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import type { IBook } from "@/lib/types/book";
 
 export async function NewArrivals() {
@@ -37,7 +37,9 @@ export async function NewArrivals() {
       </div>
 
       <div className="mt-12 flex justify-center">
-        <Button render={<Link href="/books">See All Books</Link>} />
+        <Link href="/books" className={buttonVariants({ size: "lg" })}>
+          See All Books
+        </Link>
       </div>
     </section>
   );

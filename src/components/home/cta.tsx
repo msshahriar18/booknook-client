@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 
 export function Cta() {
   return (
@@ -14,7 +14,9 @@ export function Cta() {
             borrow it the same day.
           </p>
         </div>
-        <Button size="lg" render={<Link href="/register">Create an account</Link>} />
+        <Link href="/register" className={buttonVariants({ size: "lg" })}>
+          Create an account
+        </Link>
       </div>
     </section>
   );
