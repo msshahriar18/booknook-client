@@ -5,9 +5,11 @@ import { authClient } from "@/lib/auth-client";
 
 const GoogleButton = ({ label }: { label: string }) => {
   const handleGoogleLogin = async () => {
+    const from = new URLSearchParams(window.location.search).get("from");
+
     await authClient.signIn.social({
       provider: "google",
-      callbackURL: "/",
+      callbackURL: from ?? "/",
     });
   };
 

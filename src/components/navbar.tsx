@@ -76,13 +76,15 @@ export function Navbar() {
             <Popover>
               <PopoverTrigger
                 render={
-                  <Avatar className="cursor-pointer">
-                    <AvatarImage
-                      referrerPolicy="no-referrer"
-                      src={user?.image as string}
-                    />
-                    <AvatarFallback>{user?.name.charAt(0)}</AvatarFallback>
-                  </Avatar>
+                  <button type="button" aria-label="Open account menu">
+                    <Avatar className="cursor-pointer">
+                      <AvatarImage
+                        referrerPolicy="no-referrer"
+                        src={user?.image as string}
+                      />
+                      <AvatarFallback>{user?.name.charAt(0)}</AvatarFallback>
+                    </Avatar>
+                  </button>
                 }
               ></PopoverTrigger>
               <PopoverContent className="w-56">
@@ -91,7 +93,7 @@ export function Navbar() {
                   <PopoverDescription>{user?.email}</PopoverDescription>
                 </PopoverHeader>
                 <div className="mt-3 grid gap-2">
-                  <Link href="/my-books" className="text-sm hover:text-primary">
+                  <Link href="/profile" className="text-sm hover:text-primary">
                     My Profile
                   </Link>
                   <Button onClick={handleSignout} variant="destructive" size="sm">

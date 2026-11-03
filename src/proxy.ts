@@ -10,10 +10,12 @@ export async function proxy(request: NextRequest) {
 
   const user = session?.user
   if (!user) {
-    return NextResponse.redirect(new URL('/login', request.url))
+    const login = new URL('/login', request.url)
+    login.searchParams.set('from', request.nextUrl.pathname)
+    return NextResponse.redirect(login)
   }
 }
 
 export const config = {
-  matcher: ['/add-book', '/my-books', '/my-borrows', '/books/:path'],
+  matcher: ['/add-book', '/my-books', '/my-borrows', '/profile', '/books/:path'],
 }

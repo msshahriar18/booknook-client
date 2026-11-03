@@ -41,8 +41,9 @@ export default function LoginPage() {
     });
 
     if (data) {
+      const from = new URLSearchParams(window.location.search).get("from");
       toast.add({ title: "Welcome back", description: "You are logged in." });
-      router.push("/");
+      router.push(from ?? "/");
     }
 
     if (error) {

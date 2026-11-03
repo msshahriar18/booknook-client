@@ -41,7 +41,24 @@ const EditBookDialog = ({ book }: { book: IBook }) => {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    const { _id, ...updatedData } = form;
+    const { _id, createdAt, ...rest } = form;
+
+    const borrowed = book.totalCopies - book.availableCopies;
+    const totalCopies = Number(rest.totalCopies);
+
+    if (totalCopies < borrowed) {
+      toast.add({
+        title: "Too few copies",
+        description: `${borrowed} copies are still out on loan.`,
+      });
+      return;
+    }
+
+    const updatedData = {
+      ...rest,
+      totalCopies,
+      availableCopies: totalCopies - borrowed,
+    };
 
     const token = await getTokenFromClient();
 

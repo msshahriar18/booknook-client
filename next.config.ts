@@ -5,8 +5,11 @@ const nextConfig: NextConfig = {
   partialPrefetching: false,
   reactCompiler: true,
   images: {
+    unoptimized: true,
     remotePatterns: [
-      { protocol: "https", hostname: "**" },
+      { protocol: "https", hostname: "covers.openlibrary.org" },
+      { protocol: "https", hostname: "i.ibb.co" },
+      { protocol: "https", hostname: "lh3.googleusercontent.com" },
     ],
   },
   turbopack: {
