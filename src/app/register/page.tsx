@@ -78,7 +78,7 @@ export default function RegisterPage() {
             Create your account
           </CardTitle>
           <CardDescription>
-            It takes a minute, then you can borrow and lend books.
+            Register to borrow books and add your own.
           </CardDescription>
         </CardHeader>
         <CardContent>

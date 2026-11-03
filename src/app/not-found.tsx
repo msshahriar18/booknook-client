@@ -11,10 +11,9 @@ export default function NotFound() {
       <p className="font-mono text-xs tracking-widest text-ochre uppercase">
         Error 404
       </p>
-      <h1 className="mt-4 text-5xl font-semibold">This shelf is empty</h1>
+      <h1 className="mt-4 text-5xl font-semibold">Page not found</h1>
       <p className="mx-auto mt-4 max-w-lg text-muted-foreground">
-        The page you were looking for is not here. It may have been returned,
-        renamed, or never catalogued in the first place.
+        The page you are looking for does not exist.
       </p>
       <div className="mt-8 flex justify-center gap-3">
         <Link href="/" className={buttonVariants({ size: "lg" })}>

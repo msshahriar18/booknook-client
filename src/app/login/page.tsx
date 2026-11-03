@@ -62,7 +62,7 @@ export default function LoginPage() {
             Login to BookNook
           </CardTitle>
           <CardDescription>
-            Sign in to borrow books and manage your own shelf.
+            Login to borrow books and manage your books.
           </CardDescription>
         </CardHeader>
         <CardContent>

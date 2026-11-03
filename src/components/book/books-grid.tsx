@@ -34,7 +34,7 @@ export function BooksGrid({ books }: { books: IBook[] }) {
       </p>
       <h1 className="mt-3 text-4xl font-semibold md:text-5xl">All Books</h1>
       <p className="mt-3 text-muted-foreground">
-        Everything your neighbours have put up for borrowing, newest first.
+        Every book on BookNook, newest first.
       </p>
 
       <div className="mt-8 flex flex-wrap items-center gap-4">

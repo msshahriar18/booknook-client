@@ -9,19 +9,19 @@ import "swiper/css/pagination";
 
 const slides = [
   {
-    eyebrow: "Neighbourhood library",
-    title: "Borrow the book you have been meaning to read.",
-    text: "Every book on BookNook sits on a neighbour's shelf. Pick one, keep it for seven days, then pass it back so the next reader gets a turn.",
+    eyebrow: "Welcome to BookNook",
+    title: "Borrow books from your neighbours",
+    text: "Every book here belongs to someone nearby. Pick one, keep it for seven days and return it.",
   },
   {
-    eyebrow: "Your own shelf",
-    title: "The books gathering dust can be read again.",
-    text: "Add a book in under a minute and someone nearby can borrow it the same day, with the copies tracked for you.",
+    eyebrow: "Share your shelf",
+    title: "Add your own books",
+    text: "Put up the books you are done with and let someone else read them next.",
   },
   {
-    eyebrow: "No late surprises",
-    title: "Every loan carries its return date with it.",
-    text: "Borrow a book and the return date is set straight away, so My Borrows always tells you what is due and when.",
+    eyebrow: "Seven day loans",
+    title: "Keep track of what is due",
+    text: "My Borrows shows every book you have taken and the date it has to go back.",
   },
 ];
 

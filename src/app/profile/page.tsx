@@ -59,7 +59,7 @@ export default function ProfilePage() {
       </p>
       <h1 className="mt-3 text-4xl font-semibold md:text-5xl">My Profile</h1>
       <p className="mt-3 text-muted-foreground">
-        Change the name and picture other readers see next to your books.
+        Update your name and profile picture.
       </p>
 
       <form
@@ -103,8 +103,7 @@ export default function ProfilePage() {
             <Label htmlFor="email">Email</Label>
             <Input id="email" value={user?.email ?? ""} readOnly />
             <p className="text-sm text-muted-foreground">
-              Your email is tied to your books and borrows, so it cannot be
-              changed here.
+              Your books and borrows are saved against this email, so it cannot be changed.
             </p>
           </div>
         </div>

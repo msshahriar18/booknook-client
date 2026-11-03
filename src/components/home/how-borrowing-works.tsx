@@ -2,17 +2,17 @@ const steps = [
   {
     step: "01",
     title: "Find a book",
-    text: "Search the shelves by title, author or category and open the one you like.",
+    text: "Search by title or author, or pick a category, then open the book.",
   },
   {
     step: "02",
     title: "Confirm the borrow",
-    text: "Your name and email fill in on their own, and the return date is set seven days out.",
+    text: "Your name and email are filled in already. The return date is seven days later.",
   },
   {
     step: "03",
     title: "Return it",
-    text: "One tap in My Borrows puts the copy back on the shelf for the next reader.",
+    text: "Press Return Book in My Borrows and the copy goes back on the shelf.",
   },
 ];
 
@@ -24,7 +24,7 @@ export function HowBorrowingWorks() {
           How borrowing works
         </p>
         <h2 className="mt-3 max-w-2xl text-3xl font-semibold md:text-4xl">
-          Three steps from shelf to sofa
+          Borrowing a book takes three steps
         </h2>
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">

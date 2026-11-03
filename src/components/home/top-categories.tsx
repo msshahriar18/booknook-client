@@ -6,7 +6,7 @@ const categories = [
   { name: "Science", text: "Ideas and discovery", icon: Microscope },
   { name: "History", text: "People and periods", icon: Landmark },
   { name: "Kids", text: "Picture books and tales", icon: Baby },
-  { name: "Others", text: "Everything else on the shelf", icon: Layers },
+  { name: "Others", text: "Everything else", icon: Layers },
 ];
 
 export function TopCategories() {
@@ -17,7 +17,7 @@ export function TopCategories() {
           Top categories
         </p>
         <h2 className="mt-3 text-3xl font-semibold md:text-4xl">
-          Browse by what you are in the mood for
+          Pick a category
         </h2>
 
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">

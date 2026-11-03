@@ -1,20 +1,20 @@
 # BookNook
 
-A small neighbourhood library on the web. Add a book, borrow a book, return a book.
+A small online library. Add a book, borrow a book, return a book.
 
 Live site: https://booknook.shahriyar.dev
 
 ## Features
 
-- Browse every book on the shelf, search by title or author and filter by category
-- Add your own books with a cover uploaded to imgbb, then edit or delete them from My Books
-- Borrow any available book for seven days and return it with one tap from My Borrows
-- Copies go up and down with every borrow and return, so a book with no copy left cannot be borrowed
-- Email and Google login with BetterAuth, and JWT protected routes on the Express API
+- See all the books on the shelf, search by title or author and filter by category
+- Add your own books with a cover image, then edit or delete them from My Books
+- Borrow a book for seven days and return it from My Borrows
+- Copies go down when a book is borrowed and up when it comes back, and a book with no copy left cannot be borrowed
+- Email and Google login with BetterAuth, and JWT protected API routes
 
 ## Tech
 
-Next.js 16 App Router, TypeScript, Tailwind v4 with shadcn, BetterAuth with the MongoDB adapter, Express and MongoDB on the server side.
+Next.js (App Router), TypeScript, Tailwind CSS with shadcn, BetterAuth with the MongoDB adapter, Express and MongoDB on the server.
 
 ## Run it
 

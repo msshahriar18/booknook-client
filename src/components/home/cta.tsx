@@ -7,11 +7,10 @@ export function Cta() {
       <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-6 px-6 py-14">
         <div className="flex-1">
           <h2 className="text-2xl font-semibold md:text-3xl">
-            Have a shelf of your own?
+            Want to share your books?
           </h2>
           <p className="mt-2 max-w-xl text-muted-foreground">
-            Register once, add a book in under a minute, and your neighbours can
-            borrow it the same day.
+            Create an account, add your books and people nearby can borrow them.
           </p>
         </div>
         <Link href="/register" className={buttonVariants({ size: "lg" })}>

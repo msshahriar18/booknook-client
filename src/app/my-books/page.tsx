@@ -41,7 +41,7 @@ const MyBooksPage = async () => {
           </p>
           <h1 className="mt-3 text-4xl font-semibold md:text-5xl">My Books</h1>
           <p className="mt-3 text-muted-foreground">
-            The books you have put up for borrowing.
+            The books you added to the shelf.
           </p>
         </div>
         <Link href="/add-book" className={buttonVariants({ size: "lg" })}>

@@ -38,7 +38,7 @@ const MyBorrowsPage = async () => {
           </p>
           <h1 className="mt-3 text-4xl font-semibold md:text-5xl">My Borrows</h1>
           <p className="mt-3 text-muted-foreground">
-            Books currently in your hands, with the date each one is due back.
+            The books you have borrowed and when they are due back.
           </p>
         </div>
         <Link href="/books" className={buttonVariants({ variant: "outline", size: "lg" })}>

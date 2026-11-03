@@ -13,8 +13,7 @@ export function Footer() {
             </span>
           </Link>
           <p className="mt-4 max-w-sm text-sm leading-relaxed">
-            A small neighbourhood library on the web. Share the books on your
-            shelf and borrow the ones you have been meaning to read.
+            A small online library. Add a book, borrow a book, return a book.
           </p>
         </div>
 

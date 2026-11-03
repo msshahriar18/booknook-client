@@ -111,10 +111,10 @@ export default function AddBookPage() {
           Private route
         </p>
         <h1 className="mt-3 text-4xl font-semibold md:text-5xl">
-          Add a book to the shelf
+          Add a Book
         </h1>
         <p className="mt-3 text-muted-foreground">
-          Your name and email come from your account and cannot be edited here.
+          Your name and email come from your account.
         </p>
 
         <form
@@ -192,7 +192,7 @@ export default function AddBookPage() {
               <Label htmlFor="description">Short description</Label>
               <Textarea
                 id="description"
-                placeholder="A couple of lines about the book and the condition of your copy."
+                placeholder="Write a few lines about the book."
                 className="min-h-32"
                 value={form.description}
                 onChange={(event) => update("description", event.target.value)}

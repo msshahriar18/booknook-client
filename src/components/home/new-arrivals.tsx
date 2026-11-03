@@ -18,7 +18,7 @@ export async function NewArrivals() {
             New arrivals
           </p>
           <h2 className="mt-3 text-3xl font-semibold md:text-4xl">
-            Just added to the shelves
+            Latest books on the shelf
           </h2>
         </div>
         <Link
