@@ -2,7 +2,7 @@
 
 A small online library. Add a book, borrow a book, return a book.
 
-Live site: https://booknook.shahriyar.dev
+Live site: https://booknook-client-weld.vercel.app
 
 ## Features
 
